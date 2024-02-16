@@ -6,12 +6,8 @@ export default function App() {
   const dataElements = data.map(destination => {
     return (
       <DestinationCard
-        imgUrl={destination.imgUrl}
-        country={destination.country}
-        mapUrl={destination.mapUrl}
-        location={destination.location}
-        date={destination.date}
-        description={destination.description}
+        key={destination.id}
+        {...destination}
       />
     )
   })

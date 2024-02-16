@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 
 export default function DestinationCard(props) {
-  console.log(props)
   return (
     <section className="card">
       <img src={props.imgUrl} alt={props.country} className="destination--img" />
