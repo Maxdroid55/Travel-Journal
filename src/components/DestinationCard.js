@@ -10,7 +10,7 @@ export default function DestinationCard(props) {
           <FontAwesomeIcon className="location--dot--icon" icon={faLocationDot} />&nbsp;
           {props.country.toUpperCase()}
           <span className="map--url">
-            <a href={props.mapUrl}>View on Google Maps</a>
+            <a href={props.mapUrl} target="_blank" rel="noreferrer">View on Google Maps</a>
           </span>
         </h3>
         <h2 className="location">{props.location}</h2>
